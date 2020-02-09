@@ -1,0 +1,1096 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0326F13D30D9FB616D746381 /* Pods_TmdbClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A505C252F1A42940AE9F5BCF /* Pods_TmdbClient.framework */; };
+		59FC75A1E7262B253707CDBB /* Pods_TmdbClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7E05E953BFF9396DECBF2 /* Pods_TmdbClientTests.framework */; };
+		A55081B020A6A92D7B09BFCF /* Pods_TmdbClient_TmdbClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B78D844F244B72E2190FCF0 /* Pods_TmdbClient_TmdbClientUITests.framework */; };
+		F21B527823EE33EB00B5923E /* TvShowsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B527423EE33EB00B5923E /* TvShowsListViewControllerTests.swift */; };
+		F21B527923EE33EB00B5923E /* TvShowsListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B527523EE33EB00B5923E /* TvShowsListInteractorTests.swift */; };
+		F21B527A23EE33EB00B5923E /* TvShowsListWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B527623EE33EB00B5923E /* TvShowsListWorkerTests.swift */; };
+		F21B527B23EE33EB00B5923E /* TvShowsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B527723EE33EB00B5923E /* TvShowsListPresenterTests.swift */; };
+		F21B528123EF576900B5923E /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B528023EF576900B5923E /* Seed.swift */; };
+		F21B528323EF682F00B5923E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B528223EF682F00B5923E /* Utils.swift */; };
+		F21B528423EF6DCC00B5923E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B528223EF682F00B5923E /* Utils.swift */; };
+		F21B529123EF8F8B00B5923E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2DB23ECC28C00DC55A6 /* Extensions.swift */; };
+		F21B529223EF915000B5923E /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF30E23EDCA5500DC55A6 /* AppKeys.swift */; };
+		F21B529723F0746E00B5923E /* top_rated.json in Resources */ = {isa = PBXBuildFile; fileRef = F21B529623F0746D00B5923E /* top_rated.json */; };
+		F21B529823F0746E00B5923E /* top_rated.json in Resources */ = {isa = PBXBuildFile; fileRef = F21B529623F0746D00B5923E /* top_rated.json */; };
+		F21B529B23F07B8A00B5923E /* TvShowsModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B529A23F07B8A00B5923E /* TvShowsModelTest.swift */; };
+		F21B529E23F07E2A00B5923E /* top_rated_wrong.json in Resources */ = {isa = PBXBuildFile; fileRef = F21B529D23F07E2A00B5923E /* top_rated_wrong.json */; };
+		F29BF2A523ECC09F00DC55A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2A423ECC09F00DC55A6 /* AppDelegate.swift */; };
+		F29BF2A723ECC09F00DC55A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2A623ECC09F00DC55A6 /* SceneDelegate.swift */; };
+		F29BF2AF23ECC09F00DC55A6 /* TmdbClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2AD23ECC09F00DC55A6 /* TmdbClient.xcdatamodeld */; };
+		F29BF2B123ECC0A200DC55A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29BF2B023ECC0A200DC55A6 /* Assets.xcassets */; };
+		F29BF2B423ECC0A200DC55A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29BF2B223ECC0A200DC55A6 /* LaunchScreen.storyboard */; };
+		F29BF2CA23ECC0A300DC55A6 /* TmdbClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2C923ECC0A300DC55A6 /* TmdbClientUITests.swift */; };
+		F29BF2DC23ECC28C00DC55A6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2DB23ECC28C00DC55A6 /* Extensions.swift */; };
+		F29BF2E823ECC34F00DC55A6 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2E223ECC34F00DC55A6 /* MainRouter.swift */; };
+		F29BF2EA23ECC34F00DC55A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2E423ECC34F00DC55A6 /* MainViewController.swift */; };
+		F29BF2ED23ECC36200DC55A6 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2EC23ECC36200DC55A6 /* MainConfigurator.swift */; };
+		F29BF2EF23ECC44600DC55A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2EE23ECC44600DC55A6 /* MainView.swift */; };
+		F29BF2F623ECCF7C00DC55A6 /* TvShowsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2F023ECCF7C00DC55A6 /* TvShowsListPresenter.swift */; };
+		F29BF2F723ECCF7C00DC55A6 /* TvShowsListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2F123ECCF7C00DC55A6 /* TvShowsListWorker.swift */; };
+		F29BF2F823ECCF7C00DC55A6 /* TvShowsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2F223ECCF7C00DC55A6 /* TvShowsListRouter.swift */; };
+		F29BF2F923ECCF7C00DC55A6 /* TvShowsListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2F323ECCF7C00DC55A6 /* TvShowsListModels.swift */; };
+		F29BF2FA23ECCF7C00DC55A6 /* TvShowsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2F423ECCF7C00DC55A6 /* TvShowsListViewController.swift */; };
+		F29BF2FB23ECCF7C00DC55A6 /* TvShowsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2F523ECCF7C00DC55A6 /* TvShowsListInteractor.swift */; };
+		F29BF2FD23ECD0AE00DC55A6 /* TvShowsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF2FC23ECD0AE00DC55A6 /* TvShowsConfiguration.swift */; };
+		F29BF30423ECD10F00DC55A6 /* TvShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF30323ECD10E00DC55A6 /* TvShowsView.swift */; };
+		F29BF30F23EDCA5500DC55A6 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF30E23EDCA5500DC55A6 /* AppKeys.swift */; };
+		F29BF31123EDCB3400DC55A6 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF31023EDCB3400DC55A6 /* Endpoints.swift */; };
+		F29BF31423EDD02E00DC55A6 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF31323EDD02E00DC55A6 /* ApiManager.swift */; };
+		F29BF31623EDD77900DC55A6 /* AlertResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF31523EDD77900DC55A6 /* AlertResponse.swift */; };
+		F29BF31823EDE21A00DC55A6 /* TvShowItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BF31723EDE21A00DC55A6 /* TvShowItemCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F29BF2BB23ECC0A300DC55A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29BF29923ECC09E00DC55A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F29BF2A023ECC09F00DC55A6;
+			remoteInfo = TmdbClient;
+		};
+		F29BF2C623ECC0A300DC55A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29BF29923ECC09E00DC55A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F29BF2A023ECC09F00DC55A6;
+			remoteInfo = TmdbClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		326CF8240E24FE3A37995288 /* Pods-TmdbClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbClient.release.xcconfig"; path = "Target Support Files/Pods-TmdbClient/Pods-TmdbClient.release.xcconfig"; sourceTree = "<group>"; };
+		53EC933A5AA8F4F7C4322824 /* Pods-TmdbClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbClientTests.debug.xcconfig"; path = "Target Support Files/Pods-TmdbClientTests/Pods-TmdbClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B78D844F244B72E2190FCF0 /* Pods_TmdbClient_TmdbClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmdbClient_TmdbClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		613C4922A9D6F5BACCEF70E7 /* Pods-TmdbClient-TmdbClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbClient-TmdbClientUITests.debug.xcconfig"; path = "Target Support Files/Pods-TmdbClient-TmdbClientUITests/Pods-TmdbClient-TmdbClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		99B7E05E953BFF9396DECBF2 /* Pods_TmdbClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmdbClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A505C252F1A42940AE9F5BCF /* Pods_TmdbClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmdbClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD396E9CDBFC78CD38F9F96 /* Pods-TmdbClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbClient.debug.xcconfig"; path = "Target Support Files/Pods-TmdbClient/Pods-TmdbClient.debug.xcconfig"; sourceTree = "<group>"; };
+		C7C76659720F1113658C101B /* Pods-TmdbClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbClientTests.release.xcconfig"; path = "Target Support Files/Pods-TmdbClientTests/Pods-TmdbClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7333E806D4461A9C1E15565 /* Pods-TmdbClient-TmdbClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbClient-TmdbClientUITests.release.xcconfig"; path = "Target Support Files/Pods-TmdbClient-TmdbClientUITests/Pods-TmdbClient-TmdbClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F21B527423EE33EB00B5923E /* TvShowsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListViewControllerTests.swift; sourceTree = "<group>"; };
+		F21B527523EE33EB00B5923E /* TvShowsListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListInteractorTests.swift; sourceTree = "<group>"; };
+		F21B527623EE33EB00B5923E /* TvShowsListWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListWorkerTests.swift; sourceTree = "<group>"; };
+		F21B527723EE33EB00B5923E /* TvShowsListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListPresenterTests.swift; sourceTree = "<group>"; };
+		F21B528023EF576900B5923E /* Seed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
+		F21B528223EF682F00B5923E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F21B529623F0746D00B5923E /* top_rated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_rated.json; sourceTree = "<group>"; };
+		F21B529A23F07B8A00B5923E /* TvShowsModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsModelTest.swift; sourceTree = "<group>"; };
+		F21B529D23F07E2A00B5923E /* top_rated_wrong.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = top_rated_wrong.json; sourceTree = "<group>"; };
+		F29BF2A123ECC09F00DC55A6 /* TmdbClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TmdbClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29BF2A423ECC09F00DC55A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
+		F29BF2A623ECC09F00DC55A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../SceneDelegate.swift; sourceTree = "<group>"; };
+		F29BF2AE23ECC09F00DC55A6 /* TmdbClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TmdbClient.xcdatamodel; sourceTree = "<group>"; };
+		F29BF2B023ECC0A200DC55A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F29BF2B323ECC0A200DC55A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F29BF2B523ECC0A200DC55A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
+		F29BF2BA23ECC0A300DC55A6 /* TmdbClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TmdbClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29BF2C023ECC0A300DC55A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29BF2C523ECC0A300DC55A6 /* TmdbClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TmdbClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29BF2C923ECC0A300DC55A6 /* TmdbClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbClientUITests.swift; sourceTree = "<group>"; };
+		F29BF2CB23ECC0A300DC55A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29BF2DB23ECC28C00DC55A6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F29BF2E223ECC34F00DC55A6 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		F29BF2E423ECC34F00DC55A6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F29BF2EC23ECC36200DC55A6 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		F29BF2EE23ECC44600DC55A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F29BF2F023ECCF7C00DC55A6 /* TvShowsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListPresenter.swift; sourceTree = "<group>"; };
+		F29BF2F123ECCF7C00DC55A6 /* TvShowsListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListWorker.swift; sourceTree = "<group>"; };
+		F29BF2F223ECCF7C00DC55A6 /* TvShowsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListRouter.swift; sourceTree = "<group>"; };
+		F29BF2F323ECCF7C00DC55A6 /* TvShowsListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListModels.swift; sourceTree = "<group>"; };
+		F29BF2F423ECCF7C00DC55A6 /* TvShowsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListViewController.swift; sourceTree = "<group>"; };
+		F29BF2F523ECCF7C00DC55A6 /* TvShowsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListInteractor.swift; sourceTree = "<group>"; };
+		F29BF2FC23ECD0AE00DC55A6 /* TvShowsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsConfiguration.swift; sourceTree = "<group>"; };
+		F29BF30323ECD10E00DC55A6 /* TvShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsView.swift; sourceTree = "<group>"; };
+		F29BF30E23EDCA5500DC55A6 /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
+		F29BF31023EDCB3400DC55A6 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		F29BF31323EDD02E00DC55A6 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F29BF31523EDD77900DC55A6 /* AlertResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertResponse.swift; sourceTree = "<group>"; };
+		F29BF31723EDE21A00DC55A6 /* TvShowItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowItemCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F29BF29E23ECC09F00DC55A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0326F13D30D9FB616D746381 /* Pods_TmdbClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29BF2B723ECC0A300DC55A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59FC75A1E7262B253707CDBB /* Pods_TmdbClientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29BF2C223ECC0A300DC55A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55081B020A6A92D7B09BFCF /* Pods_TmdbClient_TmdbClientUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD4067AE922C9D415810D27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A505C252F1A42940AE9F5BCF /* Pods_TmdbClient.framework */,
+				5B78D844F244B72E2190FCF0 /* Pods_TmdbClient_TmdbClientUITests.framework */,
+				99B7E05E953BFF9396DECBF2 /* Pods_TmdbClientTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A40F2124E1E03D68A844E8B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACD396E9CDBFC78CD38F9F96 /* Pods-TmdbClient.debug.xcconfig */,
+				326CF8240E24FE3A37995288 /* Pods-TmdbClient.release.xcconfig */,
+				613C4922A9D6F5BACCEF70E7 /* Pods-TmdbClient-TmdbClientUITests.debug.xcconfig */,
+				D7333E806D4461A9C1E15565 /* Pods-TmdbClient-TmdbClientUITests.release.xcconfig */,
+				53EC933A5AA8F4F7C4322824 /* Pods-TmdbClientTests.debug.xcconfig */,
+				C7C76659720F1113658C101B /* Pods-TmdbClientTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F21B526B23EE332700B5923E /* TvShowsList */ = {
+			isa = PBXGroup;
+			children = (
+				F21B527C23EEA7F700B5923E /* ViewController */,
+				F21B527D23EEA80700B5923E /* Interactor */,
+				F21B527E23EEA81300B5923E /* Worker */,
+				F21B527F23EEA82300B5923E /* Presenter */,
+				F21B529923F07B6400B5923E /* Model */,
+				F21B529523F0746D00B5923E /* Responses */,
+			);
+			path = TvShowsList;
+			sourceTree = "<group>";
+		};
+		F21B527C23EEA7F700B5923E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F21B527423EE33EB00B5923E /* TvShowsListViewControllerTests.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F21B527D23EEA80700B5923E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F21B527523EE33EB00B5923E /* TvShowsListInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F21B527E23EEA81300B5923E /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				F21B527623EE33EB00B5923E /* TvShowsListWorkerTests.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		F21B527F23EEA82300B5923E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F21B527723EE33EB00B5923E /* TvShowsListPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F21B529523F0746D00B5923E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				F21B529623F0746D00B5923E /* top_rated.json */,
+				F21B529D23F07E2A00B5923E /* top_rated_wrong.json */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		F21B529923F07B6400B5923E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F21B529A23F07B8A00B5923E /* TvShowsModelTest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F29BF29823ECC09E00DC55A6 = {
+			isa = PBXGroup;
+			children = (
+				F29BF2A323ECC09F00DC55A6 /* TmdbClient */,
+				F29BF2BD23ECC0A300DC55A6 /* TmdbClientTests */,
+				F29BF2C823ECC0A300DC55A6 /* TmdbClientUITests */,
+				F29BF2A223ECC09F00DC55A6 /* Products */,
+				A40F2124E1E03D68A844E8B5 /* Pods */,
+				0FD4067AE922C9D415810D27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F29BF2A223ECC09F00DC55A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2A123ECC09F00DC55A6 /* TmdbClient.app */,
+				F29BF2BA23ECC0A300DC55A6 /* TmdbClientTests.xctest */,
+				F29BF2C523ECC0A300DC55A6 /* TmdbClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F29BF2A323ECC09F00DC55A6 /* TmdbClient */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2D723ECC10400DC55A6 /* App */,
+				F29BF31223EDD01D00DC55A6 /* Services */,
+				F29BF2DD23ECC29800DC55A6 /* Modules */,
+				F29BF2B023ECC0A200DC55A6 /* Assets.xcassets */,
+				F29BF2B223ECC0A200DC55A6 /* LaunchScreen.storyboard */,
+				F29BF2AD23ECC09F00DC55A6 /* TmdbClient.xcdatamodeld */,
+			);
+			path = TmdbClient;
+			sourceTree = "<group>";
+		};
+		F29BF2BD23ECC0A300DC55A6 /* TmdbClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				F21B526B23EE332700B5923E /* TvShowsList */,
+				F29BF2C023ECC0A300DC55A6 /* Info.plist */,
+				F21B528023EF576900B5923E /* Seed.swift */,
+			);
+			path = TmdbClientTests;
+			sourceTree = "<group>";
+		};
+		F29BF2C823ECC0A300DC55A6 /* TmdbClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2C923ECC0A300DC55A6 /* TmdbClientUITests.swift */,
+				F29BF2CB23ECC0A300DC55A6 /* Info.plist */,
+			);
+			path = TmdbClientUITests;
+			sourceTree = "<group>";
+		};
+		F29BF2D723ECC10400DC55A6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2D823ECC11500DC55A6 /* Config */,
+				F29BF2DA23ECC27200DC55A6 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F29BF2D823ECC11500DC55A6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2A423ECC09F00DC55A6 /* AppDelegate.swift */,
+				F29BF2A623ECC09F00DC55A6 /* SceneDelegate.swift */,
+				F29BF30E23EDCA5500DC55A6 /* AppKeys.swift */,
+				F29BF31023EDCB3400DC55A6 /* Endpoints.swift */,
+				F29BF2B523ECC0A200DC55A6 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F29BF2D923ECC26000DC55A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2DB23ECC28C00DC55A6 /* Extensions.swift */,
+				F29BF31523EDD77900DC55A6 /* AlertResponse.swift */,
+				F21B528223EF682F00B5923E /* Utils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F29BF2DA23ECC27200DC55A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2D923ECC26000DC55A6 /* Helpers */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F29BF2DD23ECC29800DC55A6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2DE23ECC2A100DC55A6 /* Main */,
+				F29BF2DF23ECC32100DC55A6 /* TvShowsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F29BF2DE23ECC2A100DC55A6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2FF23ECD0BA00DC55A6 /* View */,
+				F29BF2FE23ECD0B300DC55A6 /* Router */,
+				F29BF30223ECD0DD00DC55A6 /* Configurator */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F29BF2DF23ECC32100DC55A6 /* TvShowsList */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF30523ECD49D00DC55A6 /* View */,
+				F29BF30923ECD4EF00DC55A6 /* Interactor */,
+				F29BF30B23ECD4FE00DC55A6 /* Worker */,
+				F29BF30C23ECD51200DC55A6 /* Model */,
+				F29BF30823ECD4E300DC55A6 /* Presenter */,
+				F29BF30A23ECD4F600DC55A6 /* Router */,
+				F29BF30D23ECD52700DC55A6 /* Configurator */,
+			);
+			path = TvShowsList;
+			sourceTree = "<group>";
+		};
+		F29BF2FE23ECD0B300DC55A6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2E223ECC34F00DC55A6 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F29BF2FF23ECD0BA00DC55A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF30023ECD0C100DC55A6 /* Controller */,
+				F29BF30123ECD0C600DC55A6 /* UI */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F29BF30023ECD0C100DC55A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2E423ECC34F00DC55A6 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F29BF30123ECD0C600DC55A6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2EE23ECC44600DC55A6 /* MainView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F29BF30223ECD0DD00DC55A6 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2EC23ECC36200DC55A6 /* MainConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F29BF30523ECD49D00DC55A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF30623ECD4A200DC55A6 /* Controller */,
+				F29BF30723ECD4A800DC55A6 /* UI */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F29BF30623ECD4A200DC55A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2F423ECCF7C00DC55A6 /* TvShowsListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F29BF30723ECD4A800DC55A6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF30323ECD10E00DC55A6 /* TvShowsView.swift */,
+				F29BF31723EDE21A00DC55A6 /* TvShowItemCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F29BF30823ECD4E300DC55A6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2F023ECCF7C00DC55A6 /* TvShowsListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F29BF30923ECD4EF00DC55A6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2F523ECCF7C00DC55A6 /* TvShowsListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F29BF30A23ECD4F600DC55A6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2F223ECCF7C00DC55A6 /* TvShowsListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F29BF30B23ECD4FE00DC55A6 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2F123ECCF7C00DC55A6 /* TvShowsListWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		F29BF30C23ECD51200DC55A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2F323ECCF7C00DC55A6 /* TvShowsListModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F29BF30D23ECD52700DC55A6 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF2FC23ECD0AE00DC55A6 /* TvShowsConfiguration.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F29BF31223EDD01D00DC55A6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F29BF31323EDD02E00DC55A6 /* ApiManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F29BF2A023ECC09F00DC55A6 /* TmdbClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29BF2CE23ECC0A300DC55A6 /* Build configuration list for PBXNativeTarget "TmdbClient" */;
+			buildPhases = (
+				C746BB7468AA65E59B565EFC /* [CP] Check Pods Manifest.lock */,
+				F29BF29D23ECC09F00DC55A6 /* Sources */,
+				F29BF29E23ECC09F00DC55A6 /* Frameworks */,
+				F29BF29F23ECC09F00DC55A6 /* Resources */,
+				28AF2A0EB5351BC4547C7C96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TmdbClient;
+			productName = TmdbClient;
+			productReference = F29BF2A123ECC09F00DC55A6 /* TmdbClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F29BF2B923ECC0A300DC55A6 /* TmdbClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29BF2D123ECC0A300DC55A6 /* Build configuration list for PBXNativeTarget "TmdbClientTests" */;
+			buildPhases = (
+				7A7F2CF5DEC127036F193BD8 /* [CP] Check Pods Manifest.lock */,
+				F29BF2B623ECC0A300DC55A6 /* Sources */,
+				F29BF2B723ECC0A300DC55A6 /* Frameworks */,
+				F29BF2B823ECC0A300DC55A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F29BF2BC23ECC0A300DC55A6 /* PBXTargetDependency */,
+			);
+			name = TmdbClientTests;
+			productName = TmdbClientTests;
+			productReference = F29BF2BA23ECC0A300DC55A6 /* TmdbClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F29BF2C423ECC0A300DC55A6 /* TmdbClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29BF2D423ECC0A300DC55A6 /* Build configuration list for PBXNativeTarget "TmdbClientUITests" */;
+			buildPhases = (
+				101087A453BDBE1CE10B106E /* [CP] Check Pods Manifest.lock */,
+				F29BF2C123ECC0A300DC55A6 /* Sources */,
+				F29BF2C223ECC0A300DC55A6 /* Frameworks */,
+				F29BF2C323ECC0A300DC55A6 /* Resources */,
+				031B12E3A76DC3BCA9256854 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F29BF2C723ECC0A300DC55A6 /* PBXTargetDependency */,
+			);
+			name = TmdbClientUITests;
+			productName = TmdbClientUITests;
+			productReference = F29BF2C523ECC0A300DC55A6 /* TmdbClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F29BF29923ECC09E00DC55A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mauricio Figueroa olivares";
+				TargetAttributes = {
+					F29BF2A023ECC09F00DC55A6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					F29BF2B923ECC0A300DC55A6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F29BF2A023ECC09F00DC55A6;
+					};
+					F29BF2C423ECC0A300DC55A6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F29BF2A023ECC09F00DC55A6;
+					};
+				};
+			};
+			buildConfigurationList = F29BF29C23ECC09E00DC55A6 /* Build configuration list for PBXProject "TmdbClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F29BF29823ECC09E00DC55A6;
+			productRefGroup = F29BF2A223ECC09F00DC55A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F29BF2A023ECC09F00DC55A6 /* TmdbClient */,
+				F29BF2B923ECC0A300DC55A6 /* TmdbClientTests */,
+				F29BF2C423ECC0A300DC55A6 /* TmdbClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F29BF29F23ECC09F00DC55A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29BF2B423ECC0A200DC55A6 /* LaunchScreen.storyboard in Resources */,
+				F29BF2B123ECC0A200DC55A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29BF2B823ECC0A300DC55A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21B529E23F07E2A00B5923E /* top_rated_wrong.json in Resources */,
+				F21B529723F0746E00B5923E /* top_rated.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29BF2C323ECC0A300DC55A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21B529823F0746E00B5923E /* top_rated.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031B12E3A76DC3BCA9256854 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TmdbClient-TmdbClientUITests/Pods-TmdbClient-TmdbClientUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TmdbClient-TmdbClientUITests/Pods-TmdbClient-TmdbClientUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TmdbClient-TmdbClientUITests/Pods-TmdbClient-TmdbClientUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		101087A453BDBE1CE10B106E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmdbClient-TmdbClientUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28AF2A0EB5351BC4547C7C96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TmdbClient/Pods-TmdbClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TmdbClient/Pods-TmdbClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TmdbClient/Pods-TmdbClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7F2CF5DEC127036F193BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmdbClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C746BB7468AA65E59B565EFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmdbClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F29BF29D23ECC09F00DC55A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29BF2F723ECCF7C00DC55A6 /* TvShowsListWorker.swift in Sources */,
+				F29BF31623EDD77900DC55A6 /* AlertResponse.swift in Sources */,
+				F29BF2FD23ECD0AE00DC55A6 /* TvShowsConfiguration.swift in Sources */,
+				F29BF30F23EDCA5500DC55A6 /* AppKeys.swift in Sources */,
+				F29BF2FB23ECCF7C00DC55A6 /* TvShowsListInteractor.swift in Sources */,
+				F29BF2DC23ECC28C00DC55A6 /* Extensions.swift in Sources */,
+				F29BF31423EDD02E00DC55A6 /* ApiManager.swift in Sources */,
+				F21B528323EF682F00B5923E /* Utils.swift in Sources */,
+				F29BF2EF23ECC44600DC55A6 /* MainView.swift in Sources */,
+				F29BF30423ECD10F00DC55A6 /* TvShowsView.swift in Sources */,
+				F29BF2F623ECCF7C00DC55A6 /* TvShowsListPresenter.swift in Sources */,
+				F29BF2F923ECCF7C00DC55A6 /* TvShowsListModels.swift in Sources */,
+				F29BF2E823ECC34F00DC55A6 /* MainRouter.swift in Sources */,
+				F29BF2ED23ECC36200DC55A6 /* MainConfigurator.swift in Sources */,
+				F29BF2AF23ECC09F00DC55A6 /* TmdbClient.xcdatamodeld in Sources */,
+				F29BF2A523ECC09F00DC55A6 /* AppDelegate.swift in Sources */,
+				F29BF2FA23ECCF7C00DC55A6 /* TvShowsListViewController.swift in Sources */,
+				F29BF2A723ECC09F00DC55A6 /* SceneDelegate.swift in Sources */,
+				F29BF2EA23ECC34F00DC55A6 /* MainViewController.swift in Sources */,
+				F29BF31823EDE21A00DC55A6 /* TvShowItemCell.swift in Sources */,
+				F29BF31123EDCB3400DC55A6 /* Endpoints.swift in Sources */,
+				F29BF2F823ECCF7C00DC55A6 /* TvShowsListRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29BF2B623ECC0A300DC55A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21B527823EE33EB00B5923E /* TvShowsListViewControllerTests.swift in Sources */,
+				F21B527A23EE33EB00B5923E /* TvShowsListWorkerTests.swift in Sources */,
+				F21B529B23F07B8A00B5923E /* TvShowsModelTest.swift in Sources */,
+				F21B529223EF915000B5923E /* AppKeys.swift in Sources */,
+				F21B527923EE33EB00B5923E /* TvShowsListInteractorTests.swift in Sources */,
+				F21B529123EF8F8B00B5923E /* Extensions.swift in Sources */,
+				F21B528123EF576900B5923E /* Seed.swift in Sources */,
+				F21B527B23EE33EB00B5923E /* TvShowsListPresenterTests.swift in Sources */,
+				F21B528423EF6DCC00B5923E /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29BF2C123ECC0A300DC55A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29BF2CA23ECC0A300DC55A6 /* TmdbClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F29BF2BC23ECC0A300DC55A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F29BF2A023ECC09F00DC55A6 /* TmdbClient */;
+			targetProxy = F29BF2BB23ECC0A300DC55A6 /* PBXContainerItemProxy */;
+		};
+		F29BF2C723ECC0A300DC55A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F29BF2A023ECC09F00DC55A6 /* TmdbClient */;
+			targetProxy = F29BF2C623ECC0A300DC55A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F29BF2B223ECC0A200DC55A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F29BF2B323ECC0A200DC55A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F29BF2CC23ECC0A300DC55A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F29BF2CD23ECC0A300DC55A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F29BF2CF23ECC0A300DC55A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD396E9CDBFC78CD38F9F96 /* Pods-TmdbClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5355TA2ZTC;
+				INFOPLIST_FILE = TmdbClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfigueroa.TmdbClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F29BF2D023ECC0A300DC55A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326CF8240E24FE3A37995288 /* Pods-TmdbClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5355TA2ZTC;
+				INFOPLIST_FILE = TmdbClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfigueroa.TmdbClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F29BF2D223ECC0A300DC55A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53EC933A5AA8F4F7C4322824 /* Pods-TmdbClientTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5355TA2ZTC;
+				INFOPLIST_FILE = TmdbClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfigueroa.TmdbClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TmdbClient.app/TmdbClient";
+			};
+			name = Debug;
+		};
+		F29BF2D323ECC0A300DC55A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7C76659720F1113658C101B /* Pods-TmdbClientTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5355TA2ZTC;
+				INFOPLIST_FILE = TmdbClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfigueroa.TmdbClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TmdbClient.app/TmdbClient";
+			};
+			name = Release;
+		};
+		F29BF2D523ECC0A300DC55A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613C4922A9D6F5BACCEF70E7 /* Pods-TmdbClient-TmdbClientUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5355TA2ZTC;
+				INFOPLIST_FILE = TmdbClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfigueroa.TmdbClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TmdbClient;
+			};
+			name = Debug;
+		};
+		F29BF2D623ECC0A300DC55A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7333E806D4461A9C1E15565 /* Pods-TmdbClient-TmdbClientUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5355TA2ZTC;
+				INFOPLIST_FILE = TmdbClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfigueroa.TmdbClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TmdbClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F29BF29C23ECC09E00DC55A6 /* Build configuration list for PBXProject "TmdbClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29BF2CC23ECC0A300DC55A6 /* Debug */,
+				F29BF2CD23ECC0A300DC55A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29BF2CE23ECC0A300DC55A6 /* Build configuration list for PBXNativeTarget "TmdbClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29BF2CF23ECC0A300DC55A6 /* Debug */,
+				F29BF2D023ECC0A300DC55A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29BF2D123ECC0A300DC55A6 /* Build configuration list for PBXNativeTarget "TmdbClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29BF2D223ECC0A300DC55A6 /* Debug */,
+				F29BF2D323ECC0A300DC55A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29BF2D423ECC0A300DC55A6 /* Build configuration list for PBXNativeTarget "TmdbClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29BF2D523ECC0A300DC55A6 /* Debug */,
+				F29BF2D623ECC0A300DC55A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F29BF2AD23ECC09F00DC55A6 /* TmdbClient.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F29BF2AE23ECC09F00DC55A6 /* TmdbClient.xcdatamodel */,
+			);
+			currentVersion = F29BF2AE23ECC09F00DC55A6 /* TmdbClient.xcdatamodel */;
+			path = TmdbClient.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F29BF29923ECC09E00DC55A6 /* Project object */;
+}

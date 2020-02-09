@@ -1,0 +1,26 @@
+{
+    "page": 1,
+    "total_results": 703,
+    "total_pages": 36,
+    "results": [
+        {
+            "original_name": "Chernobyl",
+            "genre_ids": [
+                18
+            ],
+            "name": "Chernobyl",
+            "popularity": 31.811,
+            "origin_country": [
+                "US"
+            ],
+            "vote_count": 807,
+            "first_air_date": "2019-05-06",
+            "backdrop_path": "/uL6Ad12W09L1sfuOE2pcTeak7bt.jpg",
+            "original_language": "en",
+            "id": 87108,
+            "vote_average": 8.7,
+            "overview": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+            "poster_path": "/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg"
+        }
+    ]
+}
